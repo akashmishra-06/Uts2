@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Page Input</title>
+    <script>
+        
+        function saveInput() {
+            const name = document.getElementById('name').value;
+            const age = document.getElementById('age').value;
+            const city = document.getElementById('city').value;
+            const phone = document.getElementById('phone').value;
+            
+            sessionStorage.setItem('name', name);
+            sessionStorage.setItem('age', age);
+            sessionStorage.setItem('city', city);
+            sessionStorage.setItem('phone', phone);
+        }
+
+        function displayInput(page) {
+            const name = sessionStorage.getItem('name');
+            const age = sessionStorage.getItem('age');
+            const city = sessionStorage.getItem('city');
+            const phone = sessionStorage.getItem('phone');
+            
+            if (!name || !age || !city || !phone) {
+                document.getElementById('output').innerText = 'No input provided. Please go back and enter data.';
+                return;
+            }
+
+            if (page === 'page2') {
+                document.getElementById('output').innerHTML = `<p><strong>Name:</strong> ${name}</p>
+                                                              <p><strong>Age:</strong> ${age}</p>
+                                                              <p><strong>City:</strong> ${city}</p>
+                                                              <p><strong>Phone:</strong> ${phone}</p>`;
+            } else if (page === 'page3') {
+                document.getElementById('output').innerHTML = `<h1>User Details</h1>
+                                                              <ul style="text-align: left; display: inline-block;">
+                                                                  <li><strong>Name:</strong> ${name}</li>
+                                                                  <li><strong>Age:</strong> ${age}</li>
+                                                                  <li><strong>City:</strong> ${city}</li>
+                                                                  <li><strong>Phone:</strong> ${phone}</li>
+                                                              </ul>`;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container" id="page1">
+        <h1>Enter Your Details</h1>
+        <input type="text" id="name" placeholder="Name">
+        <br>
+        <input type="number" id="age" placeholder="Age">
+        <br>
+        <input type="text" id="city" placeholder="City">
+        <br>
+        <input type="text" id="phone" placeholder="Phone Number">
+        <br>
+        <a href="page2.html" onclick="saveInput()"><button>Submit</button></a>
+    </div>
+</body>
+</html>
+
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS</title>
+    <link rel="stylesheet" href="styleee.css">
+</head>
+<body>
+    <div class="main" onclick="openFile()" >
+        <img src="image/IMG_20250112_204410.jpg" alt="">
+    </div>
+
+    
+    <script>
+        function openFile() {
+            window.location.href = "index2.html";
+        }
+    </script>
+
+</body>
+</html>
